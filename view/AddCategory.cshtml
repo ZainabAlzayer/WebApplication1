@@ -1,0 +1,27 @@
+﻿@model WebApplication1.Models.InventoryModel
+
+    @{
+    ViewBag.Title = "AddCategory";
+}
+
+<h2>Add Category</h2>
+<hr />
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" type="text/css" href="∼/Content/Styles.css" />
+</head>
+<body>
+    @using (Html.BeginForm())
+    {
+        @Html.ValidationSummary()
+        <p> add Catogery: @Html.TextBoxFor(x => x.Catogery) </p>
+        
+        <input type="submit" value=" Add" />
+    }
+</body>
+</html>
+
